@@ -1,0 +1,64 @@
+{
+  "name": "vrbaz",
+  "version": "1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build:local": "cross-env NODE_OPTIONS=--max-old-space-size=4096 next build",
+    "start": "next start",
+    "size": "node --max_old_space_size=4096",
+    "fix:prettier": "prettier --write ."
+  },
+  "lint-staged": {
+    "*.+(js|jsx)": [
+      "prettier --write --ignore-unknown"
+    ],
+    "*.+(json|css|md)": [
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.4.0",
+    "@emotion/react": "^11.5.0",
+    "@emotion/server": "^11.4.0",
+    "@emotion/styled": "^11.3.0",
+    "@material-ui/styles": "^5.0.0-alpha.35",
+    "@mui/icons-material": "^5.0.4",
+    "@mui/lab": "^5.0.0-alpha.51",
+    "@mui/material": "^5.0.4",
+    "@mui/styles": "^5.0.2",
+    "axios": "^0.24.0",
+    "axios-mock-adapter": "^1.20.0",
+    "chart.js": "^3.6.0",
+    "clsx": "^1.1.1",
+    "cross-env": "^7.0.3",
+    "date-fns": "^2.25.0",
+    "formik": "^2.2.9",
+    "merge": "^2.1.1",
+    "next": "^12.0.1",
+    "nprogress": "^0.2.0",
+    "pure-react-carousel": "^1.27.6",
+    "react": "^17.0.1",
+    "react-chartjs-2": "^3.3.0",
+    "react-dom": "17.0.2",
+    "react-dropzone": "^11.4.2",
+    "react-scroll": "^1.8.4",
+    "react-simple-image-viewer": "^1.1.1",
+    "simplebar-react": "^2.3.6",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^5.5.0",
+    "@types/node": "^15.0.0",
+    "@types/nprogress": "^0.2.0",
+    "@types/react": "^17.0.4",
+    "@types/react-scroll": "^1.8.2",
+    "babel-plugin-import": "^1.13.3",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "prettier": "^2.3.2",
+    "typescript": "^4.2.4"
+  }
+}
