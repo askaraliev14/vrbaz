@@ -1,9 +1,9 @@
-import NavbarLayout from 'components/layout/NavbarLayout';
-import ProductCardList from 'components/products/ProductCard1List';
-import ProductFilterCard from 'components/products/ProductFilterCard';
-import ShopIntroCard from 'components/shop/ShopIntroCard';
-import Sidenav from 'components/sidenav/Sidenav';
-import useWindowSize from 'hooks/useWindowSize';
+import NavbarLayout from '../../src/components/layout/NavbarLayout';
+import ProductCardList from '../../src/components/products/ProductCard1List';
+import ProductFilterCard from '../../src/components/products/ProductFilterCard';
+import ShopIntroCard from '../../src/components/shop/ShopIntroCard';
+import Sidenav from '../../src/components/sidenav/Sidenav';
+import useWindowSize from '../../src/hooks/useWindowSize';
 import FilterList from '@mui/icons-material/FilterList';
 import { Grid, IconButton } from '@mui/material';
 import React from 'react';

@@ -1,6 +1,6 @@
-import Card1 from 'components/Card1';
-import CustomerDashboardLayout from 'components/layout/CustomerDashboardLayout';
-import DashboardPageHeader from 'components/layout/DashboardPageHeader';
+import Card1 from "../../src/components/Card1";
+import CustomerDashboardLayout from '../../src/components/layout/CustomerDashboardLayout';
+import DashboardPageHeader from '../../src/components/layout/DashboardPageHeader';
 import CreditCard from '@mui/icons-material/CreditCard';
 import { Button, Grid, TextField } from '@mui/material';
 import { Box } from '@mui/system';

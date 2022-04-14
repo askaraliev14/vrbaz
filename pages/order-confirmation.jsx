@@ -1,8 +1,8 @@
-import BazarButton from 'components/BazarButton';
-import BazarCard from 'components/BazarCard';
-import NavbarLayout from 'components/layout/NavbarLayout';
-import LazyImage from 'components/LazyImage';
-import { H1, Paragraph } from 'components/Typography';
+import BazarButton from '../src/components/BazarButton';
+import BazarCard from '../src/components/BazarCard';
+import NavbarLayout from '../src/components/layout/NavbarLayout';
+import LazyImage from '../src/components/LazyImage';
+import { H1, Paragraph } from '../src/components/Typography';
 import { Grid, styled } from '@mui/material';
 import Link from 'next/link';
 import React from 'react'; // styled components

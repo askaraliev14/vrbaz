@@ -1,5 +1,5 @@
-import BazarImage from 'components/BazarImage';
-import FlexBox from 'components/FlexBox';
+import BazarImage from "../src/components/BazarImage";
+import FlexBox from "../src/components/FlexBox";
 import { Button } from '@mui/material';
 import Link from 'next/link';
 import { useRouter } from 'next/router';

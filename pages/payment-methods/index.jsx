@@ -1,8 +1,8 @@
-import FlexBox from 'components/FlexBox';
-import DashboardLayout from 'components/layout/CustomerDashboardLayout';
-import DashboardPageHeader from 'components/layout/DashboardPageHeader';
-import TableRow from 'components/TableRow';
-import { H5 } from 'components/Typography';
+import FlexBox from '../../src/components/FlexBox';
+import DashboardLayout from '../../src/components/layout/CustomerDashboardLayout';
+import DashboardPageHeader from '../../src/components/layout/DashboardPageHeader';
+import TableRow from '../../src/components/TableRow';
+import { H5 } from '../../src/components/Typography';
 import CreditCard from '@mui/icons-material/CreditCard';
 import Delete from '@mui/icons-material/Delete';
 import Edit from '@mui/icons-material/Edit';

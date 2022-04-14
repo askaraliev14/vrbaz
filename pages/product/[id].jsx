@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import bazarReactDatabase from "data/bazar-react-database";
-import NavbarLayout from "components/layout/NavbarLayout";
-import AvailableShops from "components/products/AvailableShops";
-import FrequentlyBought from "components/products/FrequentlyBought";
-import ProductDescription from "components/products/ProductDescription";
-import ProductIntro from "components/products/ProductIntro";
-import ProductReview from "components/products/ProductReview";
-import RelatedProducts from "components/products/RelatedProducts";
+import bazarReactDatabase from "../../src/data/bazar-react-database";
+import NavbarLayout from "../../src/components/layout/NavbarLayout";
+import AvailableShops from "../../src/components/products/AvailableShops";
+import FrequentlyBought from "../../src/components/products/FrequentlyBought";
+import ProductDescription from "../../src/components/products/ProductDescription";
+import ProductIntro from "../../src/components/products/ProductIntro";
+import ProductReview from "../../src/components/products/ProductReview";
+import RelatedProducts from "../../src/components/products/RelatedProducts";
 import { Box, Tab, Tabs } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import { H2 } from "components/Typography";
-import { getFrequentlyBought, getRelatedProducts } from "utils/api/related-products/products";
+import { H2 } from "../../src/components/Typography";
+import { getFrequentlyBought, getRelatedProducts } from "../../src/utils/api/related-products/products";
 const StyledTabs = styled(Tabs)(({
   theme
 }) => ({

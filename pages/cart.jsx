@@ -1,9 +1,9 @@
-import FlexBox from 'components/FlexBox';
-import CheckoutNavLayout from 'components/layout/CheckoutNavLayout';
-import ProductCard7 from 'components/product-cards/ProductCard7';
-import { Span } from 'components/Typography';
-import { useAppContext } from 'contexts/app/AppContext';
-import countryList from 'data/countryList';
+import FlexBox from '../src/components/FlexBox';
+import CheckoutNavLayout from '../src/components/layout/CheckoutNavLayout';
+import ProductCard7 from '../src/components/product-cards/ProductCard7';
+import { Span } from '../src/components/Typography';
+import { useAppContext } from '../src/contexts/app/AppContext';
+import countryList from '../src/data/countryList';
 import { Autocomplete, Button, Card, Divider, Grid, MenuItem, TextField } from '@mui/material';
 import Link from 'next/link';
 

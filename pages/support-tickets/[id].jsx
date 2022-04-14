@@ -1,11 +1,11 @@
-import FlexBox from 'components/FlexBox';
-import CustomerService from 'components/icons/CustomerService';
-import CustomerDashboardLayout from 'components/layout/CustomerDashboardLayout';
-import CustomerDashboardNavigation from 'components/layout/CustomerDashboardNavigation';
-import DashboardPageHeader from 'components/layout/DashboardPageHeader';
-import { H5, Span } from 'components/Typography';
+import FlexBox from "../../src/components/FlexBox";
+import CustomerService from '../../src/components/icons/CustomerService';
+import CustomerDashboardLayout from '../../src/components/layout/CustomerDashboardLayout';
+import CustomerDashboardNavigation from '../../src/components/layout/CustomerDashboardNavigation';
+import DashboardPageHeader from '../../src/components/layout/DashboardPageHeader';
+import { H5, Span } from '../../src/components/Typography';
 import { Avatar, Button, Divider, TextField } from '@mui/material';
-import { Box } from '@mui/system';
+import {Box} from "@mui/system";
 import { format } from 'date-fns';
 import Link from 'next/link';
 import React from 'react';

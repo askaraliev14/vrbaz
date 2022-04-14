@@ -1,5 +1,5 @@
-import FlexBox from 'components/FlexBox';
-import Login from 'components/sessions/Login';
+import FlexBox from '../src/components/FlexBox';
+import Login from '../src/components/sessions/Login';
 import React from 'react';
 
 const LoginPage = () => {

@@ -1,9 +1,9 @@
-import FlexBox from 'components/FlexBox';
-import CustomerDashboardLayout from 'components/layout/CustomerDashboardLayout';
-import CustomerDashboardNavigation from 'components/layout/CustomerDashboardNavigation';
-import DashboardPageHeader from 'components/layout/DashboardPageHeader';
-import TableRow from 'components/TableRow';
-import { H3, H5, Small } from 'components/Typography';
+import FlexBox from '../../src/components/FlexBox';
+import CustomerDashboardLayout from '../../src/components/layout/CustomerDashboardLayout';
+import CustomerDashboardNavigation from '../../src/components/layout/CustomerDashboardNavigation';
+import DashboardPageHeader from '../../src/components/layout/DashboardPageHeader';
+import TableRow from '../../src/components/TableRow';
+import { H3, H5, Small } from '../../src/components/Typography';
 import Person from '@mui/icons-material/Person';
 import { Avatar, Button, Card, Grid, Typography } from '@mui/material';
 import { Box } from '@mui/system';

@@ -1,19 +1,19 @@
 import Section1 from "../src/components/vrbaz-shop/Section1";
-import Section10 from "components/vrbaz-shop/Section10";
-import Section11 from "components/vrbaz-shop/Section11";
-import Section12 from "components/vrbaz-shop/Section12";
-import Section13 from "components/vrbaz-shop/Section13";
+import Section10 from "../src/components/vrbaz-shop/Section10";
+import Section11 from "../src/components/vrbaz-shop/Section11";
+import Section12 from "../src/components/vrbaz-shop/Section12";
+import Section13 from "../src/components/vrbaz-shop/Section13";
 import Section2 from "../src/components/vrbaz-shop/Section2";
-import Section3 from "components/vrbaz-shop/Section3";
-import Section4 from "components/vrbaz-shop/Section4";
-import Section5 from "components/vrbaz-shop/Section5";
-import Section6 from "components/vrbaz-shop/Section6";
-import Section7 from "components/vrbaz-shop/Section7";
-import Section8 from "components/vrbaz-shop/Section8";
-import Section9 from "components/vrbaz-shop/Section9";
+import Section3 from "../src/components/vrbaz-shop/Section3";
+import Section4 from "../src/components/vrbaz-shop/Section4";
+import Section5 from "../src/components/vrbaz-shop/Section5";
+import Section6 from "../src/components/vrbaz-shop/Section6";
+import Section7 from "../src/components/vrbaz-shop/Section7";
+import Section8 from "../src/components/vrbaz-shop/Section8";
+import Section9 from "../src/components/vrbaz-shop/Section9";
 import AppLayout from "../src/components/layout/AppLayout";
 import { getBigDiscountList, getFlashDeals, getMainCarousel, getTopCategories } from "../src/utils/api/vrbaz-shop/carousels";
-import { getCarBrands, getCarList, getCategories, getMobileBrands, getMobileList, getMobileShops, getMoreItems, getNewArrivalList, getOpticsBrands, getOpticsList, getOpticsShops, getServiceList, getTopRatedBrand, getTopRatedProduct } from "utils/api/vrbaz-shop/sections";
+import { getCarBrands, getCarList, getCategories, getMobileBrands, getMobileList, getMobileShops, getMoreItems, getNewArrivalList, getOpticsBrands, getOpticsList, getOpticsShops, getServiceList, getTopRatedBrand, getTopRatedProduct } from "../src/utils/api/vrbaz-shop/sections";
 
 const IndexPage = props => {
   const {

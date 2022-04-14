@@ -3,12 +3,12 @@ import Head from "next/head";
 import Router from "next/router";
 import "nprogress/nprogress.css";
 import nProgress from "nprogress";
-import MuiTheme from "theme/MuiTheme";
+import MuiTheme from "../src/theme/MuiTheme";
 import "simplebar/dist/simplebar.min.css";
-import OpenGraphTags from "utils/OpenGraphTags";
+import OpenGraphTags from "../src/utils/OpenGraphTags";
 import React, { Fragment, useEffect } from "react";
-import GoogleAnalytics from "utils/GoogleAnalytics";
-import { AppProvider } from "contexts/app/AppContext";
+import GoogleAnalytics from "../src/utils/GoogleAnalytics";
+import { AppProvider } from "../src/contexts/app/AppContext";
 import createEmotionCache from "../src/createEmotionCache";
 import { CacheProvider } from "@emotion/react"; // Client-side cache, shared for the whole session of the user in the browser.
 

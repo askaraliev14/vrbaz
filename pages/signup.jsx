@@ -1,5 +1,5 @@
-import FlexBox from 'components/FlexBox';
-import Signup from 'components/sessions/Signup';
+import FlexBox from '../src/components/FlexBox';
+import Signup from '../src/components/sessions/Signup';
 import React from 'react';
 
 const SignUpPage = () => {

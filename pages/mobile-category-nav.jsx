@@ -1,10 +1,10 @@
-import Accordion from 'components/accordion/Accordion';
-import AccordionHeader from 'components/accordion/AccordionHeader';
-import Header from 'components/header/Header';
-import MobileCategoryImageBox from 'components/mobile-category-nav/MobileCategoryImageBox';
-import MobileCategoryNavStyle from 'components/mobile-category-nav/MobileCategoryNavStyle';
-import MobileNavigationBar from 'components/mobile-navigation/MobileNavigationBar';
-import navigations from 'data/navigations';
+import Accordion from "../src/components/accordion/Accordion";
+import AccordionHeader from "../src/components/accordion/AccordionHeader";
+import Header from "../src/components/header/Header";
+import MobileCategoryImageBox from "../src/components/mobile-category-nav/MobileCategoryImageBox";
+import MobileCategoryNavStyle from "../src/components/mobile-category-nav/MobileCategoryNavStyle";
+import MobileNavigationBar from "../src/components/mobile-navigation/MobileNavigationBar";
+import navigations from "../src/data/navigations";
 import { Box, Divider, Grid, Typography } from '@mui/material';
 import Link from 'next/link';
 import React, { Fragment, useEffect, useState } from 'react';

@@ -1,7 +1,7 @@
-import FlexBox from 'components/FlexBox';
-import NavbarLayout from 'components/layout/NavbarLayout';
-import ShopCard1 from 'components/shop/ShopCard1';
-import { H2, Span } from 'components/Typography';
+import FlexBox from '../src/components/FlexBox';
+import NavbarLayout from '../src/components/layout/NavbarLayout';
+import ShopCard1 from '../src/components/shop/ShopCard1';
+import { H2, Span } from '../src/components/Typography';
 import { Grid, Pagination } from '@mui/material';
 import React from 'react';
 

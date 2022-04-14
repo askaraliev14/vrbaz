@@ -1,9 +1,9 @@
-import FlexBox from 'components/FlexBox';
-import CustomerDashboardLayout from 'components/layout/CustomerDashboardLayout';
-import CustomerDashboardNavigation from 'components/layout/CustomerDashboardNavigation';
-import DashboardPageHeader from 'components/layout/DashboardPageHeader';
-import ProductCard1 from 'components/product-cards/ProductCard1';
-import productDatabase from 'data/product-database';
+import FlexBox from '../src/components/FlexBox';
+import CustomerDashboardLayout from '../src/components/layout/CustomerDashboardLayout';
+import CustomerDashboardNavigation from '../src/components/layout/CustomerDashboardNavigation';
+import DashboardPageHeader from '../src/components/layout/DashboardPageHeader';
+import ProductCard1 from '../src/components/product-cards/ProductCard1';
+import productDatabase from '../src/data/product-database';
 import Favorite from '@mui/icons-material/Favorite';
 import { Button, Grid, Pagination } from '@mui/material';
 import React from 'react';

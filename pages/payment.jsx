@@ -1,6 +1,6 @@
-import CheckoutNavLayout from 'components/layout/CheckoutNavLayout';
-import PaymentForm from 'components/payment/PaymentForm';
-import PaymentSummary from 'components/payment/PaymentSummary';
+import CheckoutNavLayout from '../src/components/layout/CheckoutNavLayout';
+import PaymentForm from '../src/components/payment/PaymentForm';
+import PaymentSummary from '../src/components/payment/PaymentSummary';
 import { Grid } from '@mui/material';
 import React from 'react';
 
