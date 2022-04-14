@@ -7,10 +7,6 @@ import { createTheme, responsiveFontSizes } from "@mui/material";
 import { themeColors, primary, blue, marron, paste } from "./themeColors";
 const THEMES = {
   DEFAULT: "DEFAULT",
-  GROCERY: "GROCERY",
-  FURNITURE: "FURNITURE",
-  HEALTH: "HEALTH",
-  GIFT: "GIFT"
 };
 const breakpoints = {
   values: {
@@ -34,54 +30,6 @@ const themesOptions = {
     },
     typography
   },
-  [THEMES.GROCERY]: {
-    breakpoints,
-    components: { ...components
-    },
-    palette: {
-      primary: { ...primary,
-        light: primary[100]
-      },
-      ...themeColors
-    },
-    typography
-  },
-  [THEMES.FURNITURE]: {
-    breakpoints,
-    components: { ...components
-    },
-    palette: {
-      primary: { ...paste,
-        light: paste[100]
-      },
-      ...themeColors
-    },
-    typography
-  },
-  [THEMES.HEALTH]: {
-    breakpoints,
-    components: { ...components
-    },
-    palette: {
-      primary: { ...blue,
-        light: blue[100]
-      },
-      ...themeColors
-    },
-    typography
-  },
-  [THEMES.GIFT]: {
-    breakpoints,
-    components: { ...components
-    },
-    palette: {
-      primary: { ...marron,
-        light: marron[100]
-      },
-      ...themeColors
-    },
-    typography
-  }
 };
 export const bazarTheme = () => {
   const {
@@ -102,27 +50,6 @@ export const bazarTheme = () => {
 
   switch (pathname) {
     case "/":
-    case "/superstore-shop":
-    case "/grocery1":
-    case "/grocery2":
-    case "/grocery3":
-    case "/fashion-shop":
-    case "/gadget-shop":
-      updateTheme(THEMES.DEFAULT);
-      break;
-
-    case "/furniture-shop":
-      updateTheme(THEMES.FURNITURE);
-      break;
-
-    case "/healthbeauty-shop":
-      updateTheme(THEMES.HEALTH);
-      break;
-
-    case "/gift-shop":
-      updateTheme(THEMES.GIFT);
-      break;
-
     default:
       themeOptions = themesOptions[publicRuntimeConfig.theme];
       break;

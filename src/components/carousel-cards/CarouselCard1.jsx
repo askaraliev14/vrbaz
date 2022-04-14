@@ -69,7 +69,7 @@ const CarouselCard1 = ({
           </a>
         </Grid>
         <Grid item sm={5} xs={12}>
-          <BazarImage src={carousel.photoUrl} alt="apple-watch-1" sx={{
+          <BazarImage src={carousel.photoUrl} alt="" sx={{
           display: "block",
           mx: "auto",
           maxHeight: 400,

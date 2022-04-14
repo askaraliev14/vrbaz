@@ -10,7 +10,8 @@ import navbarNavigations from "data/navbarNavigations";
 // import ChevronRight from "@mui/icons-material/ChevronRight";
 import { Box, Container, MenuItem, styled } from "@mui/material";
 import React from "react";
-import {ArrowLeft, ChevronLeft} from "@mui/icons-material"; // component props interface
+import {ArrowLeft, ChevronLeft} from "@mui/icons-material";
+import CountrySelectModal from "./CountrySelectModal"; // component props interface
 
 // const common css style
 const navLinkStyle = {
@@ -116,7 +117,7 @@ const Navbar = ({ navListOpen, hideCategories }) => {
                   sx={{
                     mt: "1.25rem",
                     py: "0.5rem",
-                    minWidth: "230px",
+                    // minWidth: "230px",
                   }}
                   elevation={3}
                 >
@@ -161,8 +162,13 @@ const Navbar = ({ navListOpen, hideCategories }) => {
   return (
     <NavBarWrapper elevation={2} hoverEffect={false}>
       {!hideCategories ? (
-        <InnerContainer>
+        <InnerContainer sx={{
+          display: "flex",
+          justifyContent: "space-around"
+        }}>
+          <CountrySelectModal />
           <FlexBox>{renderNestedNav(navbarNavigations, true)}</FlexBox>
+          <NavLink className="link" href="/">Хотите продавать вместе с нами?</NavLink>
         </InnerContainer>
       ) : (
         <InnerContainer
@@ -171,6 +177,7 @@ const Navbar = ({ navListOpen, hideCategories }) => {
           }}
         >
           <FlexBox>{renderNestedNav(navbarNavigations, true)}</FlexBox>
+
         </InnerContainer>
       )}
     </NavBarWrapper>

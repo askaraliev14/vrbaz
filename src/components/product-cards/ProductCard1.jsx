@@ -198,3 +198,5 @@ const ProductCard1 = ({
 };
 
 export default ProductCard1;
+
+//Flash Deals

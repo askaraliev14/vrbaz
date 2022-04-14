@@ -27,6 +27,7 @@ import SearchBox from "../search-box/SearchBox";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import WishList from "../../../pages/wish-list";
 import NavbarCategory from "../navbar/NavbarCategory";
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 
 // styled component
 export const HeaderWrapper = styled(Box)(({ theme }) => ({
@@ -59,10 +60,29 @@ const Header = ({ isFixed, className }) => {
     <Badge badgeContent={cartList.length} color="primary">
       <Box
         component={IconButton}
-        bgcolor="grey.200"
         onClick={toggleSidenav}
+        fontSize={14}
+        sx={{
+          display: "flex",
+          // alignItems: "center",
+          // flexWrap: "wrap",
+          flexDirection: "column",
+          // "&:hover": {
+          //   display: "none",
+          // },
+          width: "50px",
+          height: "45px",
+          margin: "0 5px",
+          // marginTop: "7px",
+          backgroundColor: "#FFF",
+          "&:hover": {
+            backgroundColor: "#FFF"
+
+          },
+        }}
       >
-        <ShoppingBagOutlined />
+        <ShoppingCartOutlinedIcon />
+        <span>Корзина</span>
       </Box>
     </Badge>
   );
@@ -113,8 +133,8 @@ const Header = ({ isFixed, className }) => {
           <MiniCart />
         </Drawer>
         <FlexBox
-          // alignItems="center"
-          // justifyContent="space-between"
+          alignItems="center"
+          justifyContent="space-between"
           sx={{
             display: {
               xs: "none",
@@ -122,18 +142,54 @@ const Header = ({ isFixed, className }) => {
             },
           }}
         >
-          <Box component={IconButton} mr={2} ml={2} bgcolor="grey.200">
+          <Box
+            component={IconButton}
+            // mr={2}
+            ml={2}
+            fontSize={14}
+            sx={{
+              backgroundColor: "#FFF",
+              "&:hover": {
+                backgroundColor: "#FFF"
+              },
+              // display: "flex",
+              // alignItems: "center",
+              // flexWrap: "wrap",
+              flexDirection: "column",
+              // "&:hover": {
+              //   display: "none",
+              // },
+            }}
+          >
             <FavoriteBorderIcon />
+            <span>Избранное</span>
           </Box>
           {cartHandle}
           <Box
             component={IconButton}
-            ml={2}
+            // ml={2}
             mr={2}
-            bgcolor="grey.200"
+            fontSize={14}
+            // bgcolor="grey.200"
             onClick={toggleDialog}
+            label="Login"
+
+            sx={{
+              backgroundColor: "#FFF",
+              "&:hover": {
+                backgroundColor: "#FFF"
+              },
+              // display: "flex",
+              // alignItems: "center",
+              // flexWrap: "wrap",
+              flexDirection: "column",
+              // "&:hover": {
+              //   display: "none",
+              // },
+            }}
           >
             <PersonOutline />
+            <span>Войти</span>
           </Box>
         </FlexBox>
         <NavbarCategory />

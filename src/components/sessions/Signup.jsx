@@ -97,33 +97,33 @@ const Signup = () => {
   return <StyledCard elevation={3} passwordVisibility={passwordVisibility}>
       <form className="content" onSubmit={handleSubmit}>
         <H3 textAlign="center" mb={1}>
-          Create Your Account
+          Создать учетную запись
         </H3>
         <Small fontWeight="600" fontSize="12px" color="grey.800" textAlign="center" mb={4.5} display="block">
-          Please fill all fields to continue
+          Пожалуйста, заполните все поля, чтобы продолжить
         </Small>
 
-        <BazarTextField mb={1.5} name="name" label="Full Name" placeholder="Ralph Adwards" variant="outlined" size="small" fullWidth onBlur={handleBlur} onChange={handleChange} value={values.name || ''} error={!!touched.name && !!errors.name} helperText={touched.name && errors.name} />
+        <BazarTextField mb={1.5} name="name" label="ФИО" placeholder="ФИО" variant="outlined" size="small" fullWidth onBlur={handleBlur} onChange={handleChange} value={values.name || ''} error={!!touched.name && !!errors.name} helperText={touched.name && errors.name} />
 
-        <BazarTextField mb={1.5} name="email" label="Email or Phone Number" placeholder="exmple@mail.com" variant="outlined" size="small" type="email" fullWidth onBlur={handleBlur} onChange={handleChange} value={values.email || ''} error={!!touched.email && !!errors.email} helperText={touched.email && errors.email} />
+        <BazarTextField mb={1.5} name="email" label="Электронная почта или номер телефона" placeholder="exmple@mail.com" variant="outlined" size="small" type="email" fullWidth onBlur={handleBlur} onChange={handleChange} value={values.email || ''} error={!!touched.email && !!errors.email} helperText={touched.email && errors.email} />
 
-        <BazarTextField mb={1.5} name="password" label="Password" placeholder="*********" autoComplete="on" type={passwordVisibility ? 'text' : 'password'} variant="outlined" size="small" fullWidth InputProps={{
+        <BazarTextField mb={1.5} name="password" label="Пароль" placeholder="*********" autoComplete="on" type={passwordVisibility ? 'text' : 'password'} variant="outlined" size="small" fullWidth InputProps={{
         endAdornment: <IconButton size="small" type="button" onClick={togglePasswordVisibility}>
                 {passwordVisibility ? <Visibility className="passwordEye" fontSize="small" /> : <VisibilityOff className="passwordEye" fontSize="small" />}
               </IconButton>
       }} onBlur={handleBlur} onChange={handleChange} value={values.password || ''} error={!!touched.password && !!errors.password} helperText={touched.password && errors.password} />
 
-        <BazarTextField name="re_password" label="Retype Password" placeholder="*********" autoComplete="on" type={passwordVisibility ? 'text' : 'password'} variant="outlined" size="small" fullWidth InputProps={{
+        <BazarTextField name="re_password" label="Повторите ввод пароля" placeholder="*********" autoComplete="on" type={passwordVisibility ? 'text' : 'password'} variant="outlined" size="small" fullWidth InputProps={{
         endAdornment: <IconButton size="small" type="button" onClick={togglePasswordVisibility}>
                 {passwordVisibility ? <Visibility className="passwordEye" fontSize="small" /> : <VisibilityOff className="passwordEye" fontSize="small" />}
               </IconButton>
       }} onBlur={handleBlur} onChange={handleChange} value={values.re_password || ''} error={!!touched.re_password && !!errors.re_password} helperText={touched.re_password && errors.re_password} />
 
         <FormControlLabel className="agreement" name="agreement" onChange={handleChange} control={<Checkbox size="small" color="secondary" checked={values.agreement || false} />} label={<FlexBox flexWrap="wrap" alignItems="center" justifyContent="flex-start">
-              By signing up, you agree to
+          Регистрируясь, вы соглашаетесь на наши
               <a href="/" target="_blank" rel="noreferrer noopener">
                 <H6 ml={1} borderBottom="1px solid" borderColor="grey.900">
-                  Terms & Condtion
+                  Условия и положения
                 </H6>
               </a>
             </FlexBox>} />
@@ -131,7 +131,7 @@ const Signup = () => {
         <BazarButton variant="contained" color="primary" type="submit" fullWidth sx={{
         height: 44
       }}>
-          Create Account
+          Зарегистрироваться
         </BazarButton>
 
         <Box mb={2} mt={3.3}>
@@ -151,7 +151,7 @@ const Signup = () => {
       }}>
           <Image src="/assets/images/icons/facebook-filled-white.svg" alt="facebook" />
           <Box fontSize="12px" ml={1}>
-            Continue with Facebook
+            Продолжить с Facebook
           </Box>
         </BazarButton>
         <BazarButton className="googleButton" size="medium" fullWidth sx={{
@@ -159,16 +159,16 @@ const Signup = () => {
       }}>
           <Image src="/assets/images/icons/google-1.svg" alt="facebook" />
           <Box fontSize="12px" ml={1}>
-            Continue with Google
+            Продолжить через Google
           </Box>
         </BazarButton>
 
         <FlexBox justifyContent="center" alignItems="center" my="1.25rem">
-          <Box>Don’t have account?</Box>
+          <Box>Нет аккаунта?</Box>
           <Link href="/login">
             <a>
               <H6 ml={1} borderBottom="1px solid" borderColor="grey.900">
-                Log In
+                Авторизоваться
               </H6>
             </a>
           </Link>
@@ -176,11 +176,11 @@ const Signup = () => {
       </form>
 
       <FlexBox justifyContent="center" bgcolor="grey.200" py={2.5}>
-        Forgot your password?
+        Забыли пароль?
         <Link href="/">
           <a>
             <H6 ml={1} borderBottom="1px solid" borderColor="grey.900">
-              Reset It
+              Восстановить пароль
             </H6>
           </a>
         </Link>
@@ -199,7 +199,7 @@ const formSchema = yup.object().shape({
   name: yup.string().required('${path} is required'),
   email: yup.string().email('invalid email').required('${path} is required'),
   password: yup.string().required('${path} is required'),
-  re_password: yup.string().oneOf([yup.ref('password'), null], 'Passwords must match').required('Please re-type password'),
-  agreement: yup.bool().test('agreement', 'You have to agree with our Terms and Conditions!', value => value === true).required('You have to agree with our Terms and Conditions!')
+  re_password: yup.string().oneOf([yup.ref('password'), null], 'Пароли должны совпадать').required('Пожалуйста, введите пароль еще раз'),
+  agreement: yup.bool().test('agreement', 'Вы должны согласиться с нашими Условиями!', value => value === true).required('Вы должны согласиться с нашими Условиями!')
 });
 export default Signup;

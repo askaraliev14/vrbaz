@@ -54,7 +54,7 @@ const MiniCart = ({
         {!!!cartList.length && <FlexBox flexDirection="column" alignItems="center" justifyContent="center" height="calc(100% - 74px)">
             <LazyImage src="/assets/images/logos/shopping-bag.svg" width={90} height={100} />
             <Box component="p" mt={2} color="grey.600" textAlign="center" maxWidth="200px">
-              Your shopping bag is empty. Start shopping
+              Ваша корзина пуста, начните покупку...
             </Box>
           </FlexBox>}
         {cartList.map(item => <FlexBox alignItems="center" py={2} px={2.5} borderBottom={`1px solid ${palette.divider}`} key={item.id}>
@@ -112,14 +112,14 @@ const MiniCart = ({
           mb: "0.75rem",
           height: "40px"
         }} fullWidth onClick={toggleSidenav}>
-              Checkout Now (${getTotalPrice().toFixed(2)})
+              Расплатитесь сейчас (${getTotalPrice().toFixed(2)})
             </BazarButton>
           </Link>
           <Link href="/cart">
             <BazarButton color="primary" variant="outlined" sx={{
           height: 40
         }} fullWidth onClick={toggleSidenav}>
-              View Cart
+              Посмотреть корзину
             </BazarButton>
           </Link>
         </Box>}

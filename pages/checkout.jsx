@@ -1,6 +1,6 @@
-import CheckoutForm2 from 'components/checkout/CheckoutForm2';
-import CheckoutSummary2 from 'components/checkout/CheckoutSummary2';
-import GroceryLayout from 'components/layout/GroceryLayout';
+import CheckoutForm2 from "../src/components/checkout/CheckoutForm2";
+import CheckoutSummary2 from "../src/components/checkout/CheckoutSummary2";
+import GroceryLayout from "../src/components/layout/GroceryLayout";
 import { Container, Grid } from '@mui/material';
 import React from 'react';
 

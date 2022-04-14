@@ -45,7 +45,7 @@ const navbarNavigations = [{
 //   title: "Главная",
 //   child: [{
 //     title: "Super Store",
-//     url: "/superstore-shop"
+//     url: "/vrbaz-shop"
 //   }, {
 //     title: "Furniture",
 //     url: "/furniture-shop"

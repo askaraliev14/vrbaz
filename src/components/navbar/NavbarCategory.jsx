@@ -10,7 +10,7 @@ import navbarNavigations from "data/navbarNavigations";
 // import ChevronRight from "@mui/icons-material/ChevronRight";
 import { Box, Container, MenuItem, styled } from "@mui/material";
 import React from "react";
-import {ArrowLeft, ChevronLeft, ChevronRight} from "@mui/icons-material"; // component props interface
+import { ArrowLeft, ChevronLeft, ChevronRight } from "@mui/icons-material"; // component props interface
 
 // const common css style
 const navLinkStyle = {
@@ -29,12 +29,30 @@ const CategoryMenuButton = styled(BazarButton)(({ theme }) => ({
   // width: "278px",
   height: "40px",
   px: "1rem",
-  backgroundColor: theme.palette.grey[100],
+  // backgroundColor: "#FFF",
 }));
-
+const NavBarWrapper = styled(BazarCard)(({ theme }) => ({
+    display: "block",
+    position: "relative",
+    // height: "60px",
+    borderRadius: "0px",
+    [theme.breakpoints.down("md")]: {
+        display: "none",
+    },
+}));
 const NavbarCategory = ({ navListOpen, hideCategories }) => {
   return (
-      <CategoryMenu open={navListOpen} ml={0.5}>
+    <NavBarWrapper elevation={2} hoverEffect={false}>
+      <CategoryMenu
+        open={navListOpen}
+        ml={0.5}
+        sx={{
+          display: {
+            xs: "none",
+            md: "flex",
+          },
+        }}
+      >
         <CategoryMenuButton variant="text">
           <ChevronRight className="dropdown-icon" fontSize="small" />
           <Paragraph
@@ -42,13 +60,14 @@ const NavbarCategory = ({ navListOpen, hideCategories }) => {
             textAlign="right"
             flex="1 1 0"
             mr={1.25}
-            color="grey.600"
+            // color="grey.600"
           >
             Категории
           </Paragraph>
-          <Category fontSize="small" />
+          {/*<Category fontSize="small" />*/}
         </CategoryMenuButton>
       </CategoryMenu>
+    </NavBarWrapper>
   );
 };
 

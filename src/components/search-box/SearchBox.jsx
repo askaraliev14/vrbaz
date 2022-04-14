@@ -57,7 +57,7 @@ const SearchBox = () => {
     <Box
       position="relative"
       flex="1 1 0"
-      maxWidth="670px"
+      maxWidth="600px"
       mx="auto"
       {...{
         ref: parentRef,

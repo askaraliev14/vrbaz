@@ -98,26 +98,26 @@ const Topbar = () => {
           {/*</FlexBox>*/}
         </FlexBox>
 
-        <FlexBox className="topbarRight" alignItems="center">
+        {/*<FlexBox className="topbarRight" alignItems="center">*/}
 
-          <BazarMenu handler={<TouchRipple className="handler marginRight">
-                <Span className="menuTitle">{language.title}</Span>
-                <ExpandMore fontSize="inherit" />
-              </TouchRipple>}>
-            {languageList.map(item => <MenuItem className="menuItem" key={item.title} onClick={handleLanguageClick(item)}>
-                <Span className="menuTitle">{item.title}</Span>
-              </MenuItem>)}
-          </BazarMenu>
+        {/*  <BazarMenu handler={<TouchRipple className="handler marginRight">*/}
+        {/*        <Span className="menuTitle">{language.title}</Span>*/}
+        {/*        <ExpandMore fontSize="inherit" />*/}
+        {/*      </TouchRipple>}>*/}
+        {/*    {languageList.map(item => <MenuItem className="menuItem" key={item.title} onClick={handleLanguageClick(item)}>*/}
+        {/*        <Span className="menuTitle">{item.title}</Span>*/}
+        {/*      </MenuItem>)}*/}
+        {/*  </BazarMenu>*/}
 
-          <BazarMenu direction="right" handler={<TouchRipple className="handler">
-                <Span className="menuTitle">{currency.title}</Span>
-                <ExpandMore fontSize="inherit" />
-              </TouchRipple>}>
-            {currencyList.map(item => <MenuItem className="menuItem" key={item.title} onClick={handleCurrencyClick(item)}>
-                <Span className="menuTitle">{item.title}</Span>
-              </MenuItem>)}
-          </BazarMenu>
-        </FlexBox>
+        {/*  <BazarMenu direction="right" handler={<TouchRipple className="handler">*/}
+        {/*        <Span className="menuTitle">{currency.title}</Span>*/}
+        {/*        <ExpandMore fontSize="inherit" />*/}
+        {/*      </TouchRipple>}>*/}
+        {/*    {currencyList.map(item => <MenuItem className="menuItem" key={item.title} onClick={handleCurrencyClick(item)}>*/}
+        {/*        <Span className="menuTitle">{item.title}</Span>*/}
+        {/*      </MenuItem>)}*/}
+        {/*  </BazarMenu>*/}
+        {/*</FlexBox>*/}
       </Container>
     </TopbarWrapper>;
 };

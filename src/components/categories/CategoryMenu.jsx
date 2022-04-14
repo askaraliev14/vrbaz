@@ -3,29 +3,31 @@ import React, { useEffect, useRef, useState } from "react";
 import CategoryMenuCard from "./CategoryMenuCard"; // component props interface
 
 // styled component
-const Wrapper = styled(Box)(({
-  open
-}) => ({
+const Wrapper = styled(Box)(({ open }) => ({
+  borderRadius: "8px",
+  borderColor: "#2B3445",
+  backgroundColor: "#64D7F4",
   position: "relative",
   cursor: "pointer",
   "& .dropdown-icon": {
     marginLeft: "0.25rem",
     transition: "all 250ms ease-in-out",
-    transform: `rotate(${open ? "90deg" : "0deg"})`
-  }
+    transform: `rotate(${open ? "90deg" : "0deg"})`,
+  },
 }));
 
 const CategoryMenu = ({
   open: isOpen = false,
-  children
+
+  children,
 }) => {
   const [open, setOpen] = useState(isOpen);
   const popoverRef = useRef(open);
   popoverRef.current = open;
 
-  const toggleMenu = e => {
+  const toggleMenu = (e) => {
     e.stopPropagation();
-    if (!isOpen) setOpen(open => !open);
+    if (!isOpen) setOpen((open) => !open);
   };
 
   const handleDocumentClick = () => {
@@ -38,14 +40,16 @@ const CategoryMenu = ({
       window.removeEventListener("click", handleDocumentClick);
     };
   }, []);
-  return <Wrapper open={open}>
+  return (
+    <Wrapper open={open}>
       {React.cloneElement(children, {
-      open,
-      className: `${children.props.className}`,
-      onClick: toggleMenu
-    })}
+        open,
+        className: `${children.props.className}`,
+        onClick: toggleMenu,
+      })}
       <CategoryMenuCard open={open} />
-    </Wrapper>;
+    </Wrapper>
+  );
 };
 
 export default CategoryMenu;

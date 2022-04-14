@@ -93,15 +93,15 @@ const Login = () => {
   return <StyledCard elevation={3} passwordVisibility={passwordVisibility}>
       <form className="content" onSubmit={handleSubmit}>
         <H3 textAlign="center" mb={1}>
-          Welcome To Ecommerce
+          Добро пожаловать в VRBAZ
         </H3>
         <Small fontWeight="600" fontSize="12px" color="grey.800" textAlign="center" mb={4.5} display="block">
-          Log in with email & password
+          Войти с email & password
         </Small>
 
-        <BazarTextField mb={1.5} name="email" label="Email or Phone Number" placeholder="exmple@mail.com" variant="outlined" size="small" type="email" fullWidth onBlur={handleBlur} onChange={handleChange} value={values.email || ""} error={!!touched.email && !!errors.email} helperText={touched.email && errors.email} />
+        <BazarTextField mb={1.5} name="email" label="Email или Номер Телефона" placeholder="exmple@mail.com" variant="outlined" size="small" type="email" fullWidth onBlur={handleBlur} onChange={handleChange} value={values.email || ""} error={!!touched.email && !!errors.email} helperText={touched.email && errors.email} />
 
-        <BazarTextField mb={2} name="password" label="Password" placeholder="*********" autoComplete="on" type={passwordVisibility ? "text" : "password"} variant="outlined" size="small" fullWidth InputProps={{
+        <BazarTextField mb={2} name="Пароль" label="Пароль" placeholder="*********" autoComplete="on" type={passwordVisibility ? "text" : "password"} variant="outlined" size="small" fullWidth InputProps={{
         endAdornment: <IconButton size="small" type="button" onClick={togglePasswordVisibility}>
                 {passwordVisibility ? <Visibility className="passwordEye" fontSize="small" /> : <VisibilityOff className="passwordEye" fontSize="small" />}
               </IconButton>
@@ -111,7 +111,7 @@ const Login = () => {
         mb: "1.65rem",
         height: 44
       }}>
-          Login
+          Войти
         </BazarButton>
 
         <Box mb={2}>
@@ -132,7 +132,7 @@ const Login = () => {
       }}>
           <Image src="/assets/images/icons/facebook-filled-white.svg" alt="facebook" />
           <Box fontSize="12px" ml={1}>
-            Continue with Facebook
+            Продолжить с Facebook
           </Box>
         </BazarButton>
         <BazarButton className="googleButton" size="medium" fullWidth sx={{
@@ -140,16 +140,16 @@ const Login = () => {
       }}>
           <Image src="/assets/images/icons/google-1.svg" alt="facebook" />
           <Box fontSize="12px" ml={1}>
-            Continue with Google
+            Продолжить с Google
           </Box>
         </BazarButton>
 
         <FlexBox justifyContent="center" alignItems="center" my="1.25rem">
-          <Box>Don’t have account?</Box>
+          <Box>Нет Аккаунта?</Box>
           <Link href="/signup">
             <a>
               <H6 ml={1} borderBottom="1px solid" borderColor="grey.900">
-                Sign Up
+                Зарегистрироваться
               </H6>
             </a>
           </Link>
@@ -157,11 +157,11 @@ const Login = () => {
       </form>
 
       <FlexBox justifyContent="center" bgcolor="grey.200" py={2.5}>
-        Forgot your password?
+        Забыли пароль?
         <Link href="/">
           <a>
             <H6 ml={1} borderBottom="1px solid" borderColor="grey.900">
-              Reset It
+              Восстановить пароль
             </H6>
           </a>
         </Link>

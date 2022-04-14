@@ -17,7 +17,9 @@ export const AppProvider = ({
   }, [state, dispatch]);
   return <AppContext.Provider value={contextValue}>
       {
-      /* <ContextDevTool context={AppContext} id="app-context" displayName="App" /> */
+      /* <ContextDevTool context={AppContext} id="app-context" displayName="App"
+      super
+      /> */
     }
       {children}
     </AppContext.Provider>;

@@ -1,14 +1,14 @@
-import Footer from "components/footer/Footer";
-import Header from "components/header/Header";
-import MobileNavigationBar from "components/mobile-navigation/MobileNavigationBar";
-import Sticky from "components/sticky/Sticky";
-import Topbar from "components/topbar/Topbar";
 import Head from "next/head";
+import { Box } from "@mui/material";
+import Navbar from "../navbar/Navbar";
+import Sticky from "../sticky/Sticky";
+import Topbar from "../topbar/Topbar";
+import Header from "../header/Header"
 import React, { Fragment, useCallback, useState } from "react";
 
-const AppLayout = ({
+const GroceryLayout = ({
   children,
-  navbar,
+  showNavbar = true,
   title = "VRBAZ"
 }) => {
   const [isFixed, setIsFixed] = useState(false);
@@ -28,12 +28,17 @@ const AppLayout = ({
         <Header isFixed={isFixed} />
       </Sticky>
 
-      {navbar && <div className="section-after-sticky">{navbar}</div>}
-      {!navbar ? <div className="section-after-sticky">{children}</div> : children}
-
-      <MobileNavigationBar />
-      <Footer />
+      <Box sx={{
+      display: showNavbar ? "block" : "none"
+    }} className="section-after-sticky" position="relative" zIndex={1}>
+        <Navbar />
+      </Box>
+      <Box position="relative" sx={{
+      background: "#fff"
+    }}>
+        {children}
+      </Box>
     </Fragment>;
 };
 
-export default AppLayout;
+export default GroceryLayout;
