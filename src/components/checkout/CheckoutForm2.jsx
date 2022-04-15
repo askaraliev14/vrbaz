@@ -193,26 +193,26 @@ const CheckoutForm2 = () => {
           }}>
                 3
               </Avatar>
-              <Typography fontSize="20px">Payment Details</Typography>
+              <Typography fontSize="20px">Детали оплаты</Typography>
             </FlexBox>
 
             <Box mb={3.5}>
-              <Typography mb={1.5}>Enter Card Information</Typography>
+              <Typography mb={1.5}>Введите данные карты</Typography>
               <Grid container spacing={3}>
                 <Grid item sm={6} xs={12}>
-                  <TextField name="cardHolderName" label="Enter Your Name" type="text" error={!!touched.cardHolderName && !!errors.cardHolderName} helperText={touched.cardHolderName && errors.cardHolderName} fullWidth onChange={handleChange} />
+                  <TextField name="cardHolderName" label="Введите ваше имя" type="text" error={!!touched.cardHolderName && !!errors.cardHolderName} helperText={touched.cardHolderName && errors.cardHolderName} fullWidth onChange={handleChange} />
                 </Grid>
                 <Grid item sm={6} xs={12}>
-                  <TextField type="number" name="cardNumber" label="Enter Your Card Number" error={!!touched.cardNumber && !!errors.cardNumber} helperText={touched.cardNumber && errors.cardNumber} fullWidth onChange={handleChange} />
+                  <TextField type="number" name="cardNumber" label="Введите номер вашей карты" error={!!touched.cardNumber && !!errors.cardNumber} helperText={touched.cardNumber && errors.cardNumber} fullWidth onChange={handleChange} />
                 </Grid>
                 <Grid item sm={12} xs={12}>
                   <Box display="flex" justifyContent="space-between">
-                    <TextField type="number" name="cardMonth" label="Expire Card Month" error={!!touched.cardMonth && !!errors.cardMonth} helperText={touched.cardMonth && errors.cardMonth} fullWidth select onChange={handleChange}>
+                    <TextField type="number" name="cardMonth" label="Срок действия карты месяц" error={!!touched.cardMonth && !!errors.cardMonth} helperText={touched.cardMonth && errors.cardMonth} fullWidth select onChange={handleChange}>
                       {months.map(item => <MenuItem value={item} key={item}>
                           {item}
                         </MenuItem>)}
                     </TextField>
-                    <TextField type="number" name="cardYear" label="Expire Card Year" error={!!touched.cardYear && !!errors.cardYear} helperText={touched.cardYear && errors.cardYear} fullWidth select onChange={handleChange} sx={{
+                    <TextField type="number" name="cardYear" label="Срок действия карты год" error={!!touched.cardYear && !!errors.cardYear} helperText={touched.cardYear && errors.cardYear} fullWidth select onChange={handleChange} sx={{
                   mx: 3
                 }}>
                       {years.map(item => <MenuItem value={item} key={item}>
@@ -228,7 +228,7 @@ const CheckoutForm2 = () => {
           }} control={<Checkbox />} label="Save this card" />
             </Box>
             <Box>
-              <Typography mb={1.5}>Saved Cards</Typography>
+              <Typography mb={1.5}>Сохраненные карты</Typography>
               <Grid container spacing={3}>
                 {paymentMethodList.map(item => <Grid item md={4} sm={6} xs={12} key={item.last4Digits}>
                     <Card sx={{
@@ -257,22 +257,22 @@ const CheckoutForm2 = () => {
           mt: "1.5rem",
           lineHeight: 1
         }} onClick={toggleHasVoucher}>
-              I have a voucher
+              У меня есть ваучер
             </Button>
 
             {hasVoucher && <FlexBox mt={3} maxWidth="400px">
-                <TextField name="voucher" placeholder="Enter voucher code here" fullWidth value={values.voucher || ""} onChange={handleChange} />
+                <TextField name="voucher" placeholder="Введите код ваучера здесь" fullWidth value={values.voucher || ""} onChange={handleChange} />
                 <Button variant="contained" color="primary" type="button" sx={{
             ml: "1rem"
           }}>
-                  Apply
+                  Применять
                 </Button>
               </FlexBox>}
 
             <Button variant="contained" color="primary" type="submit" fullWidth sx={{
           mt: "1.5rem"
         }}>
-              Place Order
+              Заказать
             </Button>
           </Card1>
         </form>}
@@ -290,33 +290,19 @@ const addressList = [{
   address: "777 Kazi Avenue, Abington MA 2351"
 }];
 const addressList2 = [{
-  name: "UI-Lib1",
-  street1: "375 Subidbazar, MA 2351",
-  street2: "435 Bristol, MA 2351",
-  phone: "+17804084466"
-}, {
-  name: "UI-Lib2",
-  street1: "645 Bondorbazar, MA 2351",
-  street2: "968 Brockton, MA 2351",
-  phone: "+18334271710"
-}, {
-  name: "UI-Lib3",
-  street1: "324 Ambarkhana, MA 2351",
-  street2: "777 Kazi, MA 2351",
-  phone: "+17754739407"
+  name: "Fazliddin",
+  street1: "375 Amir Timur Street",
+  street2: "",
+  phone: "+12345678"
 }];
 const paymentMethodList = [{
-  cardType: "Amex",
-  last4Digits: "4765",
-  name: "Jaslynn Land"
-}, {
   cardType: "Mastercard",
   last4Digits: "5432",
-  name: "Jaslynn Land"
+  name: "Askaraliev Fazliddin"
 }, {
   cardType: "Visa",
   last4Digits: "4543",
-  name: "Jaslynn Land"
+  name: "Askaraliev Fazliddin"
 }];
 const timeList = [{
   label: "9AM - 11AM",
