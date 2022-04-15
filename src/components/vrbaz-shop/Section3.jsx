@@ -15,7 +15,7 @@ const Section3 = ({
   useEffect(() => {
     if (width < 650) setVisibleSlides(1);else if (width < 950) setVisibleSlides(2);else setVisibleSlides(3);
   }, [width]);
-  return <CategorySectionCreator icon={<Category color="primary" />} title="Лидеры продаж" seeMoreLink="#">
+  return <CategorySectionCreator icon={<Category color="primary" />} title="Хиты продаж" seeMoreLink="#">
       <Carousel totalSlides={5} visibleSlides={visibleSlides}>
         {categoryList.map((item, ind) => <Link href={item.categoryUrl} key={ind}>
             <a>

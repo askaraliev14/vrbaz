@@ -3,7 +3,7 @@
   "version": "1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 2022",
     "build": "next build",
     "build:local": "cross-env NODE_OPTIONS=--max-old-space-size=4096 next build",
     "start": "next start",
@@ -27,6 +27,7 @@
     "@mui/icons-material": "^5.0.4",
     "@mui/lab": "^5.0.0-alpha.51",
     "@mui/material": "^5.0.4",
+    "@mui/styled-engine": "^5.6.1",
     "@mui/styles": "^5.0.2",
     "@mui/system": "^5.6.1",
     "axios": "^0.24.0",

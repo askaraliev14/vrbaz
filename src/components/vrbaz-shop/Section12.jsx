@@ -30,32 +30,14 @@ const Section12 = ({
                   {item.title}
                 </H4>
                 <Span textAlign="center" color="grey.600">
-                  We offer competitive prices on our 100 million plus product any
-                  range.
+                    Мы предлагаем конкурентоспособные цены на наш более чем 100 миллионов продуктов любой
+                    диапазон.
                 </Span>
               </BazarCard>
             </Grid>;
       })}
       </Grid>
     </Container>;
-}; // const serviceList = [
-//   {
-//     icon: Truck,
-//     title: 'Worldwide Delivery',
-//   },
-//   {
-//     icon: CreditCardVerified,
-//     title: 'Safe Payment',
-//   },
-//   {
-//     icon: Shield,
-//     title: 'Shop With Confidence',
-//   },
-//   {
-//     icon: CustomerService,
-//     title: '24/7 Support',
-//   },
-// ]
-
+};
 
 export default Section12;

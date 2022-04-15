@@ -34,7 +34,7 @@ const StyledLink = styled('a')(({
 
 const Footer = () => {
   return <footer>
-      <Box bgcolor="#0c0e30">
+      <Box bgcolor="#FFCD4E">
         <Container sx={{
         p: '1rem',
         color: 'white'
@@ -44,7 +44,7 @@ const Footer = () => {
               <Grid item lg={4} md={6} sm={6} xs={12}>
                 <Link href="/">
                   <a>
-                    <Image mb={2.5} src="/assets/images/logo-white.svg" alt="logo" />
+                    <Image mb={2.5} src="/assets/images/vrbaz-logo.svg" alt="logo" />
                   </a>
                 </Link>
 

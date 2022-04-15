@@ -26,7 +26,7 @@ export default function CountrySelectModal() {
 
     return (
         <div>
-            <Button onClick={handleOpen} startIcon={<LocationOnOutlinedIcon/>}>Tashkent</Button>
+            <Button onClick={handleOpen} sx={{marginLeft: "9px"}} startIcon={<LocationOnOutlinedIcon/>}>Tashkent</Button>
             <Modal
                 aria-labelledby="transition-modal-title"
                 aria-describedby="transition-modal-description"

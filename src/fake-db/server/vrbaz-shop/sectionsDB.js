@@ -5,7 +5,7 @@
 import bazarReactDatabase from "data/bazar-react-database";
 import Mock from "fake-db/mock";
 import { bottomCategoryList, carBrandList, mobileBrandList, mobileShopList, newArrivalsList, opticsBrandList, opticsShopList, serviceList, topRatedBrandList, topRatedList } from "./super-store-data";
-Mock.onGet("/api/vrvaz-shop/toprated-product").reply(async () => {
+Mock.onGet("/api/vrbaz-shop/toprated-product").reply(async () => {
   try {
     return [200, topRatedList];
   } catch (err) {
@@ -15,7 +15,7 @@ Mock.onGet("/api/vrvaz-shop/toprated-product").reply(async () => {
     }];
   }
 });
-Mock.onGet("/api/vrvaz-shop/toprated-brand").reply(async () => {
+Mock.onGet("/api/vrbaz-shop/toprated-brand").reply(async () => {
   try {
     return [200, topRatedBrandList];
   } catch (err) {
@@ -25,7 +25,7 @@ Mock.onGet("/api/vrvaz-shop/toprated-brand").reply(async () => {
     }];
   }
 });
-Mock.onGet("/api/vrvaz-shop/new-arrivals").reply(async () => {
+Mock.onGet("/api/vrbaz-shop/new-arrivals").reply(async () => {
   try {
     return [200, newArrivalsList];
   } catch (err) {
@@ -35,7 +35,7 @@ Mock.onGet("/api/vrvaz-shop/new-arrivals").reply(async () => {
     }];
   }
 });
-Mock.onGet("/api/vrvaz-shop/car-brand-list").reply(async () => {
+Mock.onGet("/api/vrbaz-shop/car-brand-list").reply(async () => {
   try {
     return [200, carBrandList];
   } catch (err) {
@@ -46,7 +46,7 @@ Mock.onGet("/api/vrvaz-shop/car-brand-list").reply(async () => {
   }
 });
 const cartList = bazarReactDatabase.slice(0, 6);
-Mock.onGet("/api/vrvaz-shop/car-list").reply(async () => {
+Mock.onGet("/api/vrbaz-shop/car-list").reply(async () => {
   try {
     return [200, cartList];
   } catch (err) {
@@ -56,7 +56,7 @@ Mock.onGet("/api/vrvaz-shop/car-list").reply(async () => {
     }];
   }
 });
-Mock.onGet("/api/vrvaz-shop/mobile-brand-list").reply(async () => {
+Mock.onGet("/api/vrbaz-shop/mobile-brand-list").reply(async () => {
   try {
     return [200, mobileBrandList];
   } catch (err) {
@@ -66,7 +66,7 @@ Mock.onGet("/api/vrvaz-shop/mobile-brand-list").reply(async () => {
     }];
   }
 });
-Mock.onGet("/api/vrvaz-shop/mobile-shop-list").reply(async () => {
+Mock.onGet("/api/vrbaz-shop/mobile-shop-list").reply(async () => {
   try {
     return [200, mobileShopList];
   } catch (err) {
@@ -77,7 +77,7 @@ Mock.onGet("/api/vrvaz-shop/mobile-shop-list").reply(async () => {
   }
 });
 const mobileData = bazarReactDatabase.slice(81, 90);
-Mock.onGet("/api/vrvaz-shop/mobile-list").reply(async () => {
+Mock.onGet("/api/vrbaz-shop/mobile-list").reply(async () => {
   try {
     return [200, mobileData];
   } catch (err) {
@@ -87,7 +87,7 @@ Mock.onGet("/api/vrvaz-shop/mobile-list").reply(async () => {
     }];
   }
 });
-Mock.onGet("/api/vrvaz-shop/optics/watch-brands").reply(async () => {
+Mock.onGet("/api/vrbaz-shop/optics/watch-brands").reply(async () => {
   try {
     return [200, opticsBrandList];
   } catch (err) {
@@ -97,7 +97,7 @@ Mock.onGet("/api/vrvaz-shop/optics/watch-brands").reply(async () => {
     }];
   }
 });
-Mock.onGet("/api/vrvaz-shop/optics/watch-shops").reply(async () => {
+Mock.onGet("/api/vrbaz-shop/optics/watch-shops").reply(async () => {
   try {
     return [200, opticsShopList];
   } catch (err) {
@@ -108,7 +108,7 @@ Mock.onGet("/api/vrvaz-shop/optics/watch-shops").reply(async () => {
   }
 });
 const opticsData = bazarReactDatabase.slice(95, 104);
-Mock.onGet("/api/vrvaz-shop/optics-list").reply(async () => {
+Mock.onGet("/api/vrbaz-shop/optics-list").reply(async () => {
   try {
     return [200, opticsData];
   } catch (err) {
@@ -118,7 +118,7 @@ Mock.onGet("/api/vrvaz-shop/optics-list").reply(async () => {
     }];
   }
 });
-Mock.onGet("/api/vrvaz-shop/bottom-categories").reply(async () => {
+Mock.onGet("/api/vrbaz-shop/bottom-categories").reply(async () => {
   try {
     return [200, bottomCategoryList];
   } catch (err) {
@@ -129,7 +129,7 @@ Mock.onGet("/api/vrvaz-shop/bottom-categories").reply(async () => {
   }
 });
 const moreData = bazarReactDatabase.slice(48, 60);
-Mock.onGet("/api/vrvaz-shop/get-more-items").reply(async () => {
+Mock.onGet("/api/vrbaz-shop/get-more-items").reply(async () => {
   try {
     return [200, moreData];
   } catch (err) {
@@ -139,7 +139,7 @@ Mock.onGet("/api/vrvaz-shop/get-more-items").reply(async () => {
     }];
   }
 });
-Mock.onGet("/api/vrvaz-shop/get-service-list").reply(async () => {
+Mock.onGet("/api/vrbaz-shop/get-service-list").reply(async () => {
   try {
     return [200, serviceList];
   } catch (err) {

@@ -18,7 +18,7 @@ const Section4 = props => {
         <Box>
           <Grid container spacing={4}>
             <Grid item lg={6} xs={12}>
-              <CategorySectionHeader icon={<RankBadge />} title="Top Ratings" seeMoreLink="#" />
+              <CategorySectionHeader icon={<RankBadge />} title="Лучшие товары" seeMoreLink="#" />
               <BazarCard sx={{
               p: "1rem"
             }}>
@@ -34,7 +34,7 @@ const Section4 = props => {
               </BazarCard>
             </Grid>
             <Grid item md={6} xs={12}>
-              <CategorySectionHeader icon={<DottedStar />} title="Featured Brands" seeMoreLink="#" />
+              <CategorySectionHeader icon={<DottedStar />} title="Знаменитые бренды" seeMoreLink="#" />
               <BazarCard sx={{
               p: "1rem"
             }}>

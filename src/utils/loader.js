@@ -1,4 +1,4 @@
-// import dynamic from "next/dynamic";
+import dynamic from "next/dynamic";
 import { lazy, Suspense } from "react";
 // export const MyContext = dynamic(() => import("../contexts/ThemeContext"), {
 //   suspense: true,

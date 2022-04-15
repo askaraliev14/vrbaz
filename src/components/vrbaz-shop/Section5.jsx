@@ -8,7 +8,7 @@ import ProductCard2 from "../product-cards/ProductCard2";
 const Section5 = ({
   newArrivalsList
 }) => {
-  return <CategorySectionCreator icon={<NewArrival />} title="New Arrivals" seeMoreLink="#">
+  return <CategorySectionCreator icon={<NewArrival />} title="Новые поступления" seeMoreLink="#">
       <BazarCard sx={{
       p: "1rem"
     }}>

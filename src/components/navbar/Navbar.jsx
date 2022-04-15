@@ -10,16 +10,19 @@ import navbarNavigations from "data/navbarNavigations";
 // import ChevronRight from "@mui/icons-material/ChevronRight";
 import { Box, Container, MenuItem, styled } from "@mui/material";
 import React from "react";
-import {ArrowLeft, ChevronLeft} from "@mui/icons-material";
+import { ArrowLeft, ChevronLeft } from "@mui/icons-material";
 import CountrySelectModal from "./CountrySelectModal"; // component props interface
 
 // const common css style
 const navLinkStyle = {
   cursor: "pointer",
-  marginRight: "2rem",
+  marginRight: "7px",
   transition: "color 150ms ease-in-out",
+  padding: "4px 9px",
   "&:hover": {
-    color: "primary.main",
+    borderRadius: "4px",
+    backgroundColor: "#64D7F4",
+    color: "#fff!important",
   },
   "&:last-child": {
     marginRight: "0",
@@ -58,12 +61,6 @@ const InnerContainer = styled(Container)(() => ({
   justifyContent: "space-between",
   alignItems: "center",
   height: "100%",
-}));
-const CategoryMenuButton = styled(BazarButton)(({ theme }) => ({
-  // width: "278px",
-  height: "40px",
-  px: "1rem",
-  backgroundColor: theme.palette.grey[100],
 }));
 
 const Navbar = ({ navListOpen, hideCategories }) => {
@@ -137,7 +134,6 @@ const Navbar = ({ navListOpen, hideCategories }) => {
           return (
             <ParentNav position="relative" minWidth="230px" key={nav.title}>
               <MenuItem color="grey.700">
-
                 <Box flex="1 1 0" component="span">
                   {nav.title}
                 </Box>
@@ -162,22 +158,40 @@ const Navbar = ({ navListOpen, hideCategories }) => {
   return (
     <NavBarWrapper elevation={2} hoverEffect={false}>
       {!hideCategories ? (
-        <InnerContainer sx={{
-          display: "flex",
-          justifyContent: "space-around"
-        }}>
+        <InnerContainer
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+          }}
+        >
           <CountrySelectModal />
           <FlexBox>{renderNestedNav(navbarNavigations, true)}</FlexBox>
-          <NavLink className="link" href="/">Хотите продавать вместе с нами?</NavLink>
+          <NavLink
+            sx={{
+              color: "#2b3445",
+              cursor: "pointer",
+              transition: "color 150ms ease-in-out",
+              padding: "4px",
+              "&:hover": {
+                borderRadius: "4px",
+                backgroundColor: "#64D7F4",
+                color: "#fff!important",
+              },
+            }}
+            href="/"
+          >
+            Продавайте вместе с нами
+          </NavLink>
         </InnerContainer>
       ) : (
         <InnerContainer
-          sx={{
-            // justifyContent: "flex-end",
-          }}
+          sx={
+            {
+              // justifyContent: "flex-end",
+            }
+          }
         >
           <FlexBox>{renderNestedNav(navbarNavigations, true)}</FlexBox>
-
         </InnerContainer>
       )}
     </NavBarWrapper>

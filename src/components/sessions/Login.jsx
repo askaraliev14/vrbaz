@@ -101,7 +101,7 @@ const Login = () => {
 
         <BazarTextField mb={1.5} name="email" label="Email или Номер Телефона" placeholder="exmple@mail.com" variant="outlined" size="small" type="email" fullWidth onBlur={handleBlur} onChange={handleChange} value={values.email || ""} error={!!touched.email && !!errors.email} helperText={touched.email && errors.email} />
 
-        <BazarTextField mb={2} name="Пароль" label="Пароль" placeholder="*********" autoComplete="on" type={passwordVisibility ? "text" : "password"} variant="outlined" size="small" fullWidth InputProps={{
+        <BazarTextField mb={2} name="password" label="Пароль" placeholder="*********" autoComplete="on" type={passwordVisibility ? "text" : "password"} variant="outlined" size="small" fullWidth InputProps={{
         endAdornment: <IconButton size="small" type="button" onClick={togglePasswordVisibility}>
                 {passwordVisibility ? <Visibility className="passwordEye" fontSize="small" /> : <VisibilityOff className="passwordEye" fontSize="small" />}
               </IconButton>
@@ -121,7 +121,7 @@ const Login = () => {
 
           <FlexBox justifyContent="center" mt={-1.625}>
             <Box color="grey.600" bgcolor="background.paper" px={2}>
-              on
+              или
             </Box>
           </FlexBox>
         </Box>

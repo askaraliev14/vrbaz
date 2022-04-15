@@ -22,10 +22,6 @@ const navbarNavigations = [{
         url: '#'
     },
     {
-        title: "Бытовая техника",
-        url: '#'
-    },
-    {
         title: "Дом ",
         url: '#'
     },

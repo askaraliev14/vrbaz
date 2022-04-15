@@ -41,8 +41,8 @@ const App = ({
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-        <GoogleAnalytics />
-        <OpenGraphTags />
+        {/*<GoogleAnalytics />*/}
+        {/*<OpenGraphTags />*/}
       </Head>
       <AppProvider>
         <MuiTheme>

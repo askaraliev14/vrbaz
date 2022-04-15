@@ -29,7 +29,7 @@ const themesOptions = {
       ...themeColors
     },
     typography
-  },
+  }
 };
 export const bazarTheme = () => {
   const {
@@ -50,12 +50,16 @@ export const bazarTheme = () => {
 
   switch (pathname) {
     case "/":
+    case "/vrbaz-shop":
+      updateTheme(THEMES.DEFAULT);
+      break;
+
     default:
       themeOptions = themesOptions[publicRuntimeConfig.theme];
       break;
   }
 
-  ;
+
   /*============ Remove above code ==============*/
 
   /* Uncomment below line and set your theme, theme name reference: THEMES  */

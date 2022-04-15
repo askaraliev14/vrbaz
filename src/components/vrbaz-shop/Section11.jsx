@@ -9,7 +9,7 @@ const Section11 = ({
   return <Container sx={{
     mb: '70px'
   }}>
-      <CategorySectionHeader title="More For You" seeMoreLink="#" />
+      <CategorySectionHeader title="Больше для вас" seeMoreLink="#" />
       <Grid container spacing={3}>
         {moreItems.map((item, ind) => <Grid item lg={3} md={4} sm={6} xs={12} key={ind}>
             <ProductCard1 off={25} hoverEffect {...item} />

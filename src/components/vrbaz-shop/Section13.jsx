@@ -19,7 +19,7 @@ const Section13 = ({
   useEffect(() => {
     if (width < 370) setVisibleSlides(1);else if (width < 650) setVisibleSlides(2);else if (width < 950) setVisibleSlides(4);else setVisibleSlides(6);
   }, [width]);
-  return <CategorySectionCreator icon={<GiftBox />} title="Big Discounts" seeMoreLink="#">
+  return <CategorySectionCreator icon={<GiftBox />} title="Большие скидки" seeMoreLink="#">
       <Box my="-0.25rem">
         <Carousel totalSlides={9} visibleSlides={visibleSlides}>
           {bigDiscountList.map(item => <Box py={0.5} key={item.id}>

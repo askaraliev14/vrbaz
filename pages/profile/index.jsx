@@ -109,9 +109,9 @@ const Profile = () => {
           <Small color="grey.600" mb={0.5}>
             Birth date
           </Small>
-          <span className="pre">
-            {format(new Date(1996 / 11 / 16), 'dd MMM, yyyy')}
-          </span>
+          {/*<span className="pre">*/}
+          {/*  {format(new Date(1996 / 11 / 16), 'dd MMM, yyyy')}*/}
+          {/*</span>*/}
         </FlexBox>
       </TableRow>
     </CustomerDashboardLayout>;

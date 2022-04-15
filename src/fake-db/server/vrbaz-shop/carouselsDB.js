@@ -1,7 +1,7 @@
 // FOLLOWING CODES ARE MOCK SERVER IMPLEMENTATION
 // YOU NEED TO BUILD YOUR OWN SERVER
 // IF YOU NEED HELP ABOUT SERVER SIDE IMPLEMENTATION
-// CONTACT US AT support@ui-lib.com
+// CONTACT US AT askaraliev1499@gmail.com
 import bazarReactDatabase from "data/bazar-react-database";
 import Mock from "fake-db/mock";
 import { mainCarouselData, topCategoryList, flashDealsData } from "./super-store-data";

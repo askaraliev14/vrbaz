@@ -1,7 +1,3 @@
-// FOLLOWING CODES ARE MOCK SERVER IMPLEMENTATION
-// YOU NEED TO BUILD YOUR OWN SERVER
-// IF YOU NEED HELP ABOUT SERVER SIDE IMPLEMENTATION
-// CONTACT US AT support@ui-lib.com
 import Mock from "fake-db/mock";
 import { frequentlyBoughtData, relatedProducts } from "./related-data";
 Mock.onGet("/api/frequently-bought-products").reply(async () => {
