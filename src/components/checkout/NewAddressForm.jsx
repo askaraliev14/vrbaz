@@ -14,14 +14,14 @@ const checkoutSchema = yup.object({
   zip: yup.number().required("required")
 });
 const initialValues = {
-  name: "Ui Lib",
-  street1: "321, Subid Bazar",
+  name: "Fazliddin",
+  street1: "321, Amir Timur",
   street2: "",
   phone: "01789123456",
-  city: "Sylhet",
-  state: "Sylhet",
-  country: "Bangladesh",
-  zip: 4336
+  city: "Tashkent",
+  state: "Yashnabad",
+  country: "Uzbekistan",
+  zip: 100000
 };
 
 const NewAddressForm = ({
@@ -56,37 +56,37 @@ const NewAddressForm = ({
       <Button color="primary" variant="outlined" sx={{
       p: "2px 20px"
     }} onClick={() => addCardForm ? setAddCardForm(false) : setAddCardForm(true)}>
-        Add New Address
+        Добавьте новый адрес
       </Button>
       <Dialog open={addCardForm} onClose={() => setAddCardForm(false)}>
         <DialogContent>
           <Typography variant="h6" mb={3}>
-            Add New Address Information
+            Добавить информацию о новом адресе
           </Typography>
           <form onSubmit={handleSubmit}>
             <Box mb={3.5}>
               <Grid container spacing={3}>
                 <Grid item sm={6} xs={12}>
-                  <TextField fullWidth type="text" name="name" label="Enter Your Name" value={values.name} error={touched.name && Boolean(errors.name)} helperText={touched.name && errors.name} onChange={handleChange} />
+                  <TextField fullWidth type="text" name="name" label="Введите ваше имя" value={values.name} error={touched.name && Boolean(errors.name)} helperText={touched.name && errors.name} onChange={handleChange} />
                 </Grid>
                 <Grid item sm={6} xs={12}>
-                  <TextField fullWidth type="text" name="street1" value={values.street1} label="Street line 1" error={touched.street1 && Boolean(errors.street1)} helperText={touched.street1 && errors.street1} onChange={handleChange} />
-                </Grid>
-
-                <Grid item sm={6} xs={12}>
-                  <TextField fullWidth type="text" name="street2" value={values.street2} label="Address line 2" error={touched.street2 && Boolean(errors.street2)} helperText={touched.street2 && errors.street2} onChange={handleChange} />
+                  <TextField fullWidth type="text" name="street1" value={values.street1} label="Улица" error={touched.street1 && Boolean(errors.street1)} helperText={touched.street1 && errors.street1} onChange={handleChange} />
                 </Grid>
 
                 <Grid item sm={6} xs={12}>
-                  <TextField fullWidth type="number" name="phone" value={values.phone} label="Enter Your Phone" error={touched.phone && Boolean(errors.phone)} helperText={touched.phone && errors.phone} onChange={handleChange} />
+                  <TextField fullWidth type="text" name="street2" value={values.street2} label="Адресная строка" error={touched.street2 && Boolean(errors.street2)} helperText={touched.street2 && errors.street2} onChange={handleChange} />
                 </Grid>
 
                 <Grid item sm={6} xs={12}>
-                  <TextField fullWidth name="city" value={values.city} label="City" error={touched.city && Boolean(errors.city)} helperText={touched.city && errors.city} onChange={handleChange} />
+                  <TextField fullWidth type="number" name="phone" value={values.phone} label="Введите свой телефон" error={touched.phone && Boolean(errors.phone)} helperText={touched.phone && errors.phone} onChange={handleChange} />
                 </Grid>
 
                 <Grid item sm={6} xs={12}>
-                  <TextField name="state" value={values.state} label="State" error={touched.state && Boolean(errors.state)} helperText={touched.state && errors.state} fullWidth onChange={handleChange} />
+                  <TextField fullWidth name="city" value={values.city} label="Город" error={touched.city && Boolean(errors.city)} helperText={touched.city && errors.city} onChange={handleChange} />
+                </Grid>
+
+                <Grid item sm={6} xs={12}>
+                  <TextField name="state" value={values.state} label="РаЙон" error={touched.state && Boolean(errors.state)} helperText={touched.state && errors.state} fullWidth onChange={handleChange} />
                 </Grid>
 
                 <Grid item sm={6} xs={12}>
@@ -94,13 +94,13 @@ const NewAddressForm = ({
                 </Grid>
 
                 <Grid item sm={6} xs={12}>
-                  <TextField name="country" value={values.country} label="Country" error={touched.country && Boolean(errors.country)} helperText={touched.country && errors.country} fullWidth onChange={handleChange} />
+                  <TextField name="country" value={values.country} label="Страна" error={touched.country && Boolean(errors.country)} helperText={touched.country && errors.country} fullWidth onChange={handleChange} />
                 </Grid>
               </Grid>
             </Box>
             <Box>
               <Button color="primary" variant="contained" type="submit">
-                Submit Form
+                Сохранить форму
               </Button>
             </Box>
           </form>

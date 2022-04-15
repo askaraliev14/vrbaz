@@ -97,20 +97,20 @@ const CheckoutForm2 = () => {
           }}>
                 1
               </Avatar>
-              <Typography fontSize="20px">Delivery Date and Time</Typography>
+              <Typography fontSize="20px">Дата и время доставки</Typography>
             </FlexBox>
 
             <Box mb={3.5}>
               <Grid container spacing={3}>
                 <Grid item sm={6} xs={12}>
-                  <TextField type="text" name="date" label="Delivery Date" error={!!touched.date && !!errors.date} helperText={touched.date && errors.date} select fullWidth onChange={handleChange}>
+                  <TextField type="text" name="date" label="День доставки" error={!!touched.date && !!errors.date} helperText={touched.date && errors.date} select fullWidth onChange={handleChange}>
                     {dateList.map(item => <MenuItem value={item.value} key={item.label}>
                         {item.label}
                       </MenuItem>)}
                   </TextField>
                 </Grid>
                 <Grid item sm={6} xs={12}>
-                  <TextField type="text" name="time" label="Delivery Time" error={!!touched.time && !!errors.time} helperText={touched.time && errors.time} select fullWidth onChange={handleChange}>
+                  <TextField type="text" name="time" label="Время доставки" error={!!touched.time && !!errors.time} helperText={touched.time && errors.time} select fullWidth onChange={handleChange}>
                     {timeList.map(item => <MenuItem value={item.value} key={item.value}>
                         {item.value}
                       </MenuItem>)}
@@ -134,13 +134,13 @@ const CheckoutForm2 = () => {
             }}>
                   2
                 </Avatar>
-                <Typography fontSize="20px">Delivery Address</Typography>
+                <Typography fontSize="20px">Адрес доставки</Typography>
               </FlexBox>
 
               <NewAddressForm setNewAddress={setNewAddress} />
             </FlexBox>
 
-            <Typography mb={1.5}>Delivery Address</Typography>
+            <Typography mb={1.5}>Адрес доставки</Typography>
             <Grid container spacing={3}>
               {addressData.map((item, ind) => <Grid item md={4} sm={6} xs={12} key={ind}>
                   <Card sx={{

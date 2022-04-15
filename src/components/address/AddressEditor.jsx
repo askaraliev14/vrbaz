@@ -17,12 +17,12 @@ const AddressEditor = () => {
   };
 
   return <div>
-      <DashboardPageHeader icon={Place} title="Add New Address" button={<Link href="/address">
+      <DashboardPageHeader icon={Place} title="Добавьте новый адрес" button={<Link href="/address">
             <Button color="primary" sx={{
         bgcolor: 'primary.light',
         px: '2rem'
       }}>
-              Back to Address
+                Вернуться к адресу
             </Button>
           </Link>} navigation={<CustomerDashboardNavigation />} />
 
@@ -39,19 +39,19 @@ const AddressEditor = () => {
               <Box mb={4}>
                 <Grid container spacing={3}>
                   <Grid item md={6} xs={12}>
-                    <TextField name="name" label="Name" fullWidth onBlur={handleBlur} onChange={handleChange} value={values.name || ''} error={!!touched.name && !!errors.name} helperText={touched.name && errors.name} />
+                    <TextField name="name" label="Имя" fullWidth onBlur={handleBlur} onChange={handleChange} value={values.name || ''} error={!!touched.name && !!errors.name} helperText={touched.name && errors.name} />
                   </Grid>
                   <Grid item md={6} xs={12}>
-                    <TextField name="address" label="Address Line" fullWidth onBlur={handleBlur} onChange={handleChange} value={values.address || ''} error={!!touched.address && !!errors.address} helperText={touched.address && errors.address} />
+                    <TextField name="address" label="Адресная строка" fullWidth onBlur={handleBlur} onChange={handleChange} value={values.address || ''} error={!!touched.address && !!errors.address} helperText={touched.address && errors.address} />
                   </Grid>
                   <Grid item md={6} xs={12}>
-                    <TextField name="contact" label="Phone" fullWidth onBlur={handleBlur} onChange={handleChange} value={values.contact || ''} error={!!touched.contact && !!errors.contact} helperText={touched.contact && errors.contact} />
+                    <TextField name="contact" label="Телефон" fullWidth onBlur={handleBlur} onChange={handleChange} value={values.contact || ''} error={!!touched.contact && !!errors.contact} helperText={touched.contact && errors.contact} />
                   </Grid>
                 </Grid>
               </Box>
 
               <Button type="submit" variant="contained" color="primary">
-                Save Changes
+                  Сохранить изменения
               </Button>
             </form>}
         </Formik>
