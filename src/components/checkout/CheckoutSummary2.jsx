@@ -6,7 +6,7 @@ import React from 'react';
 const CheckoutSummary2 = () => {
   return <Box>
       <Typography color="secondary.900" fontWeight="700" mb={3}>
-        Your order
+        Ваши заказы
       </Typography>
 
       {cartList.map(item => <FlexBox justifyContent="space-between" alignItems="center" mb={3} key={item.name}>
@@ -25,22 +25,22 @@ const CheckoutSummary2 = () => {
     }} />
 
       <FlexBox justifyContent="space-between" alignItems="center" mb={1}>
-        <Typography color="grey.600">Subtotal:</Typography>
+        <Typography color="grey.600">Итого товар:</Typography>
         <Typography fontWeight="700">${2610 .toFixed(2)}</Typography>
       </FlexBox>
 
       <FlexBox justifyContent="space-between" alignItems="center" mb={1}>
-        <Typography color="grey.600">Shipping:</Typography>
+        <Typography color="grey.600">Доставка:</Typography>
         <Typography fontWeight="700">-</Typography>
       </FlexBox>
 
       <FlexBox justifyContent="space-between" alignItems="center" mb={1}>
-        <Typography color="grey.600">Tax:</Typography>
+        <Typography color="grey.600">Налог:</Typography>
         <Typography fontWeight="700">${40 .toFixed(2)}</Typography>
       </FlexBox>
 
       <FlexBox justifyContent="space-between" alignItems="center" mb={3}>
-        <Typography color="grey.600">Discount:</Typography>
+        <Typography color="grey.600">Скидка:</Typography>
         <Typography fontWeight="700">-</Typography>
       </FlexBox>
 
@@ -50,8 +50,8 @@ const CheckoutSummary2 = () => {
     }} />
 
       <FlexBox fontWeight="700" justifyContent="space-between" alignItems="center" mb={1}>
-        <Typography>Total:</Typography>
-        <Typography fontWeight="700">${2610 .toFixed(2)}</Typography>
+        <Typography>Итого:</Typography>
+        <Typography fontWeight="700">${2650 .toFixed(2)}</Typography>
       </FlexBox>
     </Box>;
 };
