@@ -1,5 +1,5 @@
-import FlexBox from 'components/FlexBox';
-import LazyImage from 'components/LazyImage';
+import FlexBox from '/src/components/FlexBox';
+import LazyImage from '/src/components/LazyImage';
 import { Typography } from '@mui/material';
 import React from 'react';
 

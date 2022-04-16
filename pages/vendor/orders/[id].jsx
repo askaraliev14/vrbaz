@@ -1,8 +1,8 @@
-import FlexBox from 'src/components/FlexBox';
-import DashboardPageHeader from 'src/components/layout/DashboardPageHeader';
-import VendorDashboardLayout from 'src/components/layout/VendorDashboardLayout';
-import TableRow from 'src/components/TableRow';
-import { H5, H6 } from 'src/components/Typography';
+import FlexBox from '/src/components/FlexBox';
+import DashboardPageHeader from '/src/components/layout/DashboardPageHeader';
+import VendorDashboardLayout from '/src/components/layout/VendorDashboardLayout';
+import TableRow from '/src/components/TableRow';
+import { H5, H6 } from '/src/components/Typography';
 import Delete from '@mui/icons-material/Delete';
 import ShoppingBag from '@mui/icons-material/ShoppingBag';
 import { Avatar, Button, Card, Divider, Grid, IconButton, MenuItem, TextField, Typography } from '@mui/material';

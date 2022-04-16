@@ -68,7 +68,7 @@ const list = [{
 }, {
   title: 'Category',
   icon: CategoryOutlined,
-  href: '/mobile-category-nav'
+  href: '/'
 }, {
   title: 'Cart',
   icon: ShoppingBagOutlined,

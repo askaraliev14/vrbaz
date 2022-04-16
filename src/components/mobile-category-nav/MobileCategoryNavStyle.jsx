@@ -1,5 +1,5 @@
 import { styled } from '@mui/material/styles';
-import { layoutConstant } from 'utils/constants';
+import { layoutConstant } from '/src/utils/constants';
 const MobileCategoryNavStyle = styled('div')(({
   theme
 }) => ({

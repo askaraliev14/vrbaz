@@ -1,7 +1,7 @@
-import DropZone from 'components/DropZone';
-import DeliveryBox from 'components/icons/DeliveryBox';
-import DashboardPageHeader from 'components/layout/DashboardPageHeader';
-import VendorDashboardLayout from 'components/layout/VendorDashboardLayout';
+import DropZone from '/src/components/DropZone';
+import DeliveryBox from '/src/components/icons/DeliveryBox';
+import DashboardPageHeader from '/src/components/layout/DashboardPageHeader';
+import VendorDashboardLayout from '/src/components/layout/VendorDashboardLayout';
 import { Button, Card, Grid, MenuItem, TextField } from '@mui/material';
 import { Formik } from 'formik';
 import Link from 'next/link';

@@ -1,8 +1,8 @@
-import VendorAnalyticsChart from "src/components/dashboard/VendorAnalyticsChart";
-import FlexBox from "src/components/FlexBox"
-import DashboardPageHeader from 'src/components/layout/DashboardPageHeader';
-import VendorDashboardLayout from 'src/components/layout/VendorDashboardLayout';
-import { H1, H5, Paragraph } from 'src/components/Typography';
+import VendorAnalyticsChart from "/src/components/dashboard/VendorAnalyticsChart";
+import FlexBox from "/src/components/FlexBox"
+import DashboardPageHeader from '/src/components/layout/DashboardPageHeader';
+import VendorDashboardLayout from '/src/components/layout/VendorDashboardLayout';
+import { H1, H5, Paragraph } from '/src/components/Typography';
 import ShoppingBag from '@mui/icons-material/ShoppingBag';
 import { Avatar, Card, Grid } from '@mui/material';
 import React from 'react';

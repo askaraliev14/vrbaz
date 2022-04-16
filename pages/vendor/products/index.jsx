@@ -1,9 +1,9 @@
-import FlexBox from 'src/components/FlexBox';
-import DeliveryBox from 'src/components/icons/DeliveryBox';
-import DashboardPageHeader from 'src/components/layout/DashboardPageHeader';
-import VendorDashboardLayout from 'src/components/layout/VendorDashboardLayout';
-import TableRow from 'src/components/TableRow';
-import { H5 } from 'src/components/Typography';
+import FlexBox from '/src/components/FlexBox';
+import DeliveryBox from '/src/components/icons/DeliveryBox';
+import DashboardPageHeader from '/src/components/layout/DashboardPageHeader';
+import VendorDashboardLayout from '/src/components/layout/VendorDashboardLayout';
+import TableRow from '/src/components/TableRow';
+import { H5 } from '/src/components/Typography';
 import East from '@mui/icons-material/East';
 import { Avatar, IconButton, Pagination, Typography } from '@mui/material';
 import Link from 'next/link';
