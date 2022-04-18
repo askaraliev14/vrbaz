@@ -1,4 +1,4 @@
-If you are not familiar with React DO NOT CHANGE CODE!!!
+To do any kind of modification contact me:
 ```angular2html
 Contacts: 
 Email: askaraliev1499@gmail.com
