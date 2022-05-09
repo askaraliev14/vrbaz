@@ -25,13 +25,6 @@ const StyledLink = styled('a')(({
     color: theme.palette.grey[100]
   }
 }));
-
-// const Footer = () => {
-//   return(
-//       <Fragment/>
-//   )
-// }
-
 const Footer = () => {
   return <footer>
       <Box bgcolor="#FFCD4E">
@@ -44,7 +37,7 @@ const Footer = () => {
               <Grid item lg={4} md={6} sm={6} xs={12}>
                 <Link href="/">
                   <a>
-                    <Image mb={2.5} src="/assets/images/vrbaz-logo.svg" alt="logo" />
+                    <Image  src="/assets/images/vrbaz-logoFooter.svg" alt="logo" />
                   </a>
                 </Link>
 
@@ -59,7 +52,7 @@ const Footer = () => {
 
               <Grid item lg={2} md={6} sm={6} xs={12}>
                 <Box fontSize="25px" fontWeight="600" mb={2.5} lineHeight="1" color="white">
-                  About Us
+                  О Нас
                 </Box>
 
                 <div>
@@ -71,7 +64,7 @@ const Footer = () => {
 
               <Grid item lg={3} md={6} sm={6} xs={12}>
                 <Box fontSize="25px" fontWeight="600" mb={2.5} lineHeight="1" color="white">
-                  Customer Care
+                  Служба Поддержки
                 </Box>
 
                 <div>
@@ -83,16 +76,16 @@ const Footer = () => {
 
               <Grid item lg={3} md={6} sm={6} xs={12}>
                 <Box fontSize="25px" fontWeight="600" mb={2.5} lineHeight="1" color="white">
-                  Contact Us
+                  Контакты
                 </Box>
                 <Box py={0.6} color="grey.500">
-                  70 Washington Square South, New York, NY 10012, United States
+                  Uzbekistan, Tashkent
                 </Box>
                 <Box py={0.6} color="grey.500">
-                  Email: uilib.help@gmail.com
+                  Email: info@vrbaz.uz
                 </Box>
                 <Box py={0.6} mb={2} color="grey.500">
-                  Phone: +1 1123 456 780
+                  Phone: +998 23 456 7890
                 </Box>
 
                 <FlexBox className="flex" mx={-0.625}>
@@ -110,22 +103,22 @@ const Footer = () => {
     </footer>;
 };
 
-const aboutLinks = ['Careers', 'Our Stores', 'Our Cares', 'Terms & Conditions', 'Privacy Policy'];
-const customerCareLinks = ['Help Center', 'How to Buy', 'Track Your Order', 'Corporate & Bulk Purchasing', 'Returns & Refunds'];
+const aboutLinks = ['Работа', 'Наши магазины', 'Условия и Соглашение', 'Политика конфиденциальности'];
+const customerCareLinks = ['Центр помощи', 'Как купить', 'Отслеживать ваш заказ', 'Возвраты и возмещения'];
 const iconList = [{
   icon: Facebook,
-  url: 'https://www.facebook.com/UILibOfficial'
+  url: 'https://www.facebook.com'
 }, {
   icon: Twitter,
-  url: 'https://twitter.com/uilibofficial'
+  url: 'https://twitter.com'
 }, {
   icon: Youtube,
-  url: 'https://www.youtube.com/channel/UCsIyD-TSO1wQFz-n2Y4i3Rg'
+  url: 'https://www.youtube.com'
 }, {
   icon: Google,
   url: '/'
 }, {
   icon: Instagram,
-  url: 'https://www.instagram.com/uilibofficial/'
+  url: 'https://www.instagram.com'
 }];
 export default Footer;

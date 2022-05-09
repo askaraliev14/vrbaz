@@ -39,6 +39,7 @@ const commonArrowBtnStyle = ({
 const StyledCarouselProvider = styled(CarouselProvider)(({
   spacing
 }) => ({
+  // background: theme.palette.warning.light,
   position: 'relative',
   minWidth: 0,
   '& .focusRing___1airF.carousel__slide-focus-ring': {
